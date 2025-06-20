@@ -60,11 +60,7 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 2. **Account age**: Converted text values to numeric years (e.g., "6 years old" → 6.0)
 3. **Target variable**: Created binary classification
 
-### Key Findings
-- Most players surveyed have some form of communication access
-- Free-to-play status appears is strongly correlated to communication restrictions
-- Players with communication restrictions tend to have fewer hours played
-
+### Univariate Analysis
 
 <iframe
     src="assets/univariate.html"
@@ -72,3 +68,22 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
     height="600"
     frameborder="0">
 </iframe>
+
+A majority of the people who took this survey have some communication access. This doesn't necessarily mean that a majority of TF2 players overall have comm access however. This bias will need to be taken into account when doing the model evaluation later since it isn't close to a 50-50 split.
+
+### Bivariate Analysis
+
+<iframe
+    src="assets/bivariate.html"
+    width="800"
+    height="600"
+    frameborder="0">
+</iframe>
+
+
+### Key Findings
+- Most players surveyed have some form of communication access
+- Free-to-play status appears is strongly correlated to communication restrictions
+- Players with communication restrictions tend to have fewer hours played
+
+
