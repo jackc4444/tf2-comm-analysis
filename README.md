@@ -164,6 +164,8 @@ The baseline model achieves an F1-score of 0.866, which is **decent but has room
 It can generalize unseen data only to the extent to which it resembles the existing data frome existing survey responses (aka not very well).
 I wouldn't consider it to be too reliable, considering only about 3k responses out of millions of tf2 players. There's probably also additional biases in that everyone who responded to this survey also was a watcher of this particular youtuber, and unseen data (as in random tf2 player) would not have this trait (and related tendencies such as english speaker, etc).
 
+False positives are especially prevalent, exceeding the number of true negative predictions, which means this model is too quick to predict `some_access`, due to the bias of the dataset being comprised of mostly respondees that have `some_access`.
+
 A numerical based model would probably extrapolate better as it would factor in numerical trends, and not just a datapoint's relation to the training set. But for this to work, I would need a lot of quantitative features, when there really only is two.
 A lot of the data is boolean, so some sort of decision tree would probably be more effective.
 
