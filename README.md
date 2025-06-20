@@ -83,6 +83,8 @@ The responses were separated into different buckets from their experience level,
 It should be noted that there is a noticeable drop in comm access for the expert group of respondees. This can possibly be attributed to the small sample size (110) and misidentification from the respondees.
 
 
+### Interesting Aggregates
+
 | F2P?, Free Steam Acc? |   Access_Rate |   Avg_Hours |   Avg_Security_Score |   Sample_Size |
 |:----------------------|--------------:|------------:|---------------------:|--------------:|
 | ('No', 'No')          |         0.658 |    1729.37  |                1.711 |            38 |
@@ -90,6 +92,11 @@ It should be noted that there is a noticeable drop in comm access for the expert
 | ('Yes', 'No')         |         0.453 |     537.589 |                1.844 |           919 |
 | ('Yes', 'Yes')        |         0.777 |     514.349 |                2.289 |           646 |
 
+This table groups by `are you free to play?` and `have you spent money on this steam account?`. It aggregates the groupby object by the taking the mean of the `target` column, a new binary classification column which is a 1 for players that have comm access, 0 for no comm access.
+
+- It then takes the mean of the cleaned `hours_numeric` column (which had converted strings to numbers and got rid of absurdly big numbers)
+- the mean of `security_score` (calculated from summed incidence of 2FA, email verified, phone verified)
+- the count of the columns in each group for a sample size metric
 
 ### Key Findings
 - Most players surveyed have some form of communication access
