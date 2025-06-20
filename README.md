@@ -106,3 +106,21 @@ Some takeaways are that the majority of respondees are not F2P and have spent mo
 - Players with communication restrictions tend to have fewer hours played
 
 
+## Framing a Prediction Problem
+
+Before moving onto the prediction problem, there is something that must be taken into account.
+The overall size of the dataset (about 3000 rows) is *relatively small*, and isn't large enough to make meaningful distinctions, picking out trends across specific types of access (i.e. full acccess, text chat only, no access, text and voice).
+This is why it makes the most sense as a **binary classification problem** (the groundwork for which has already been laid in the data cleaning step), where a player can either have no access, or any amount of chat access
+
+### **Dependent Variable**: Communication access permissions after TF2 updates
+- `no_access`: Players with no communication abilities
+- `some_access`: Players with any form of communication (text, voice, or both)
+
+### Why This Response Variable?
+Communication restrictions significantly impact the gaming experience. Being able to predict which players might face restrictions helps understand the factors that lead to these limitations.
+
+### Evaluation Metric: F1-Score
+Classes are imbalanced, precision and recall need to be evaluated and not just accuracy.
+
+### Predictive Model:
+The goal is to predict communication restrictions for new players based on account characteristics (account age, security features, spending history). These features would be available at prediction time since those are the factors that are taken into account when the game servers decide whether or not a player has chat access.
