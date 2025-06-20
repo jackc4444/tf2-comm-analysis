@@ -18,6 +18,7 @@ to collect data on communications access and see if there were any factors that 
 </div>
 
 The dataset has **12** columns and **3587** rows, corresponding to 3587 survey responses. Some promising features are:
+
 `how many hours do you have in tf2`
 - hi
     - hi
