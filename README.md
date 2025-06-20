@@ -85,12 +85,12 @@ It should be noted that there is a noticeable drop in comm access for the expert
 
 ### Interesting Aggregates
 
-| F2P?, Free Steam Acc? |   Access_Rate |   Avg_Hours |   Avg_Security_Score |   Sample_Size |
-|:----------------------|--------------:|------------:|---------------------:|--------------:|
-| ('No', 'No')          |         0.658 |    1729.37  |                1.711 |            38 |
-| ('No', 'Yes')         |         0.99  |    1581.73  |                2.812 |          1939 |
-| ('Yes', 'No')         |         0.453 |     537.589 |                1.844 |           919 |
-| ('Yes', 'Yes')        |         0.777 |     514.349 |                2.289 |           646 |
+| F2P?, Paid Steam User? |   Access_Rate |   Avg_Hours |   Avg_Security_Score |   Sample_Size |
+|:-----------------------|--------------:|------------:|---------------------:|--------------:|
+| ('No', 'No')           |         0.658 |    1729.37  |                1.711 |            38 |
+| ('No', 'Yes')          |         0.99  |    1581.73  |                2.812 |          1939 |
+| ('Yes', 'No')          |         0.453 |     537.589 |                1.844 |           919 |
+| ('Yes', 'Yes')         |         0.777 |     514.349 |                2.289 |           646 |
 
 This table groups by `are you free to play?` and `have you spent money on this steam account?`. It aggregates the groupby object by the taking the mean of the `target` column, a new binary classification column which is a 1 for players that have comm access, 0 for no comm access.
 
