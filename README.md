@@ -17,13 +17,19 @@ to collect data on communications access and see if there were any factors that 
     </iframe>
 </div>
 
+### The million dollar question: What account characteristics determine whether or not a TF2 player can use chat after the update?
+
+This question is important because examining Valve's metrics will give insight into what they believe distinguishes a bot from a real player. Botting isn't a problem unique to TF2, and verifying that somebody is a real person is becoming a more and more relevant problem in today's world, with the prevalence of AI.
+Instead of using a CAPTCHA or any singular metric, modern tools will have to look at a variety of metrics and signals to determine if somebody is "real".
+
 
 ### The dataset has **12** columns and **3587** rows, corresponding to 3587 survey responses. Some important columns are:
 
 `what do you have permission to do after the update?`
-- Contains 4 unique strings, corresponding to levels of chat permissions, *text chat, no voice commands*, *no text chat, voice commands*, *text chat, voice commands*, *no text chat, no voice commands*
+- Contains 4 unique strings, corresponding to levels of chat permissions: *text chat, no voice commands*, *no text chat, voice commands*, *text chat, voice commands*, *no text chat, no voice commands*
 - This column will be the dependent variable that I will attempt to predict in this project
 
 **Promising Features**
 
 `how old is your steam account?`
+- Contains a string in the format of *number* + *years old*, representing an integer number of years old a respondee's steam account is. (Steam is the platform that tf2 is on)
