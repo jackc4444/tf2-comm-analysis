@@ -33,3 +33,14 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 
 `how old is your steam account?`
 - Contains a string in the format of *number* + *years old*, representing an integer number of years old a respondee's steam account is. (Steam is the platform that tf2 is on)
+
+`how many hours do you have in tf2`
+- Integer number of hours respondee has on tf2
+
+`have you spent money on this steam account?`
+- String that is "Yes" or "No" corresponding to if respondee has spent money on their steam account
+
+`do you have a verified email on the account?`
+- String that is "Yes" or "No" corresponding to respondee's verified email status
+
+e
