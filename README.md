@@ -154,10 +154,10 @@ The goal is to predict communication restrictions for new players based on accou
 
 **Confusion Matrix: `Prediction`**
 
-|Actual      | no_access | some_access|
-|-----------:|----------:|-----------:|
-|no_access   |   61      |         75 |
-|some_access |   78      |        495 |
+|Actual             | predict no_access | predict some_access|
+|------------------:|------------------:|-------------------:|
+|actual no_access   |   61              |                 75 |
+|actual some_access |   78              |                495 |
 
 ### Model Assessment
 The baseline model achieves an F1-score of 0.866, which is **decent but has room for improvement**. The model shows alright performance with some challenges in correctly identifying comm restricted players (44% precision for no_access class).
@@ -237,10 +237,10 @@ KNN (k=1) makes predictions based on the single most similar player in the train
 
 **Confusion Matrix: `Prediction`**
 
-|Actual      | no_access | some_access|
-|-----------:|----------:|-----------:|
-|no_access   |   70      |         66 |
-|some_access |   66      |        507 |
+|Actual             | predict no_access | predict some_access|
+|------------------:|------------------:|-------------------:|
+|actual no_access   |   70              |                 66 |
+|actual some_access |   66              |                507 |
 
 ### Improvement Over Baseline
 **Baseline (KNN k=1)**:
