@@ -235,6 +235,13 @@ KNN (k=1) makes predictions based on the single most similar player in the train
 - **F1-Score**: 0.885
 - **Accuracy**: 0.814
 
+Confusion Matrix: Prediction
+
+|Actual      | no_access | some_access|
+|-----------:|----------:|-----------:|
+|no_access   |   70      |         66 |
+|some_access |   66      |        507 |
+
 ### Improvement Over Baseline
 **Baseline (KNN k=1)**:
 - F1-Score: 0.866
