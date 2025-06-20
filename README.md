@@ -189,5 +189,6 @@ KNN (k=1) makes predictions based on the single most similar player in the train
   6. do you have a verified email on the account?
   7. hours_numeric
   8. account_age_years
+
 **Engineered Features**
   9. Polynomial features
