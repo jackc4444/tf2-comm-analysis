@@ -43,13 +43,13 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 `do you have a verified email on the account?`
 - String that is "Yes" or "No" corresponding to respondee's verified email status
 
-| how old is your steam account?   |   how many hours do you have in tf2? | have you spent money on this steam account?   | do you have a verified email on the account?   |
-|:---------------------------------|-------------------------------------:|:----------------------------------------------|:-----------------------------------------------|
-| 6 years old                      |                                 3300 | Yes                                           | Yes                                            |
-| 9 years old                      |                                 4025 | Yes                                           | Yes                                            |
-| 1 year old                       |                                  330 | Yes                                           | Yes                                            |
-| 3 years old                      |                                 1000 | Yes                                           | Yes                                            |
-| 4 years old                      |                                  351 | Yes                                           | Yes                                            |
+| what do you have permission to do after the update?   | how old is your steam account?   |   how many hours do you have in tf2? | have you spent money on this steam account?   | do you have a verified email on the account?   |
+|:------------------------------------------------------|:---------------------------------|-------------------------------------:|:----------------------------------------------|:-----------------------------------------------|
+| i can text chat, and i can use voice commands         | 6 years old                      |                                 3300 | Yes                                           | Yes                                            |
+| i can text chat, and i can use voice commands         | 9 years old                      |                                 4025 | Yes                                           | Yes                                            |
+| i can text chat, and i can use voice commands         | 1 year old                       |                                  330 | Yes                                           | Yes                                            |
+| i can text chat, and i can use voice commands         | 3 years old                      |                                 1000 | Yes                                           | Yes                                            |
+| i can text chat, and i can use voice commands         | 4 years old                      |                                  351 | Yes                                           | Yes                                            |
 
 
 
