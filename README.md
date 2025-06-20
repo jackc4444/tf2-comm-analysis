@@ -43,4 +43,15 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 `do you have a verified email on the account?`
 - String that is "Yes" or "No" corresponding to respondee's verified email status
 
-e
+## Data Cleaning and Explroatory Data Analysis
+
+### Cleaning Steps
+1. **Hours played**: Removed extreme outliers (>20,000 hours) and the entire row for those entries (since those are just people messing with the survey)
+2. **Account age**: Converted text values to numeric years (e.g., "6 years old" → 6.0)
+3. **Target variable**: Created binary classification
+
+### Key Findings
+- Most players have some form of communication access
+- Free-to-play status appears related to communication restrictions
+- Players with communication restrictions tend to have fewer hours played
+- The aggregate table shows clear patterns between account characteristics and access rates
