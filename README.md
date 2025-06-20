@@ -152,7 +152,7 @@ The goal is to predict communication restrictions for new players based on accou
 - **F1-Score**: 0.866
 - **Accuracy**: 0.784
 
-Confusion Matrix: Prediction
+**Confusion Matrix: `Prediction`**
 
 |Actual      | no_access | some_access|
 |-----------:|----------:|-----------:|
@@ -235,7 +235,7 @@ KNN (k=1) makes predictions based on the single most similar player in the train
 - **F1-Score**: 0.885
 - **Accuracy**: 0.814
 
-Confusion Matrix: Prediction
+**Confusion Matrix: `Prediction`**
 
 |Actual      | no_access | some_access|
 |-----------:|----------:|-----------:|
