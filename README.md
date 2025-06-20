@@ -153,10 +153,10 @@ The goal is to predict communication restrictions for new players based on accou
 - **Accuracy**: 0.784
 
 Confusion Matrix: Prediction
-|Actual     | no_access | some_access|
-|-----------|-----------|------------|
-no_access   |   61      |         75
-some_access |   78      |        495
+|Actual      | no_access | some_access|
+|-----------:|----------:|-----------:|
+|no_access   |   61      |         75 |
+|some_access |   78      |        495 |
 
 ### Model Assessment
 The baseline model achieves an F1-score of 0.866, which is **decent but has room for improvement**. The model shows alright performance with some challenges in correctly identifying comm restricted players (44% precision for no_access class).
