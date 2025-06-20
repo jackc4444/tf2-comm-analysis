@@ -132,7 +132,7 @@ The goal is to predict communication restrictions for new players based on accou
 - `no_access`: Players with no communication abilities
 - `some_access`: Players with any form of communication (text, voice, or both)
 
-### Three independent variables:
+### Three independent variables (features):
 - Free to play status
 - If money has been spent elsewhere in steam account
 - Hours played in TF2
@@ -171,3 +171,23 @@ A lot of the data is boolean, so some sort of decision tree would probably be mo
 
 ### Model Characteristics
 KNN (k=1) makes predictions based on the single most similar player in the training data. While this can capture complex patterns, it may be overly sensitive to individual data points. The confusion matrix shows the model has difficulty distinguishing between the classes, with 75 false positives and 78 false negatives, indicating there's significant room for improvement in the final model.
+
+
+## Final Model
+
+### **Dependent Variable**: Communication access permissions after TF2 updates
+- `no_access`: Players with no communication abilities
+- `some_access`: Players with any form of communication (text, voice, or both)
+
+### Independent variables (features):
+**Base Features**
+  1. are you free to play?
+  2. have you spent money on this steam account?
+  3. have you used a VPN on this steam account?
+  4. do you have steam guard/2FA enabled?
+  5. do you have a phone number attached to the account?
+  6. do you have a verified email on the account?
+  7. hours_numeric
+  8. account_age_years
+**Engineered Features**
+  9. Polynomial features
