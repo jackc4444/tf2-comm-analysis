@@ -80,7 +80,7 @@ A majority of the people who took this survey have some communication access. Th
 </iframe>
 The responses were separated into different buckets from their experience level, and classified based on some metrics such as F2P status, steam spending, etc. I looked at the percentage of these players that had full comm access. From these plots there are some obvious trends. Paying players have basically full communication access regardless of experience level. For F2P players, there is a trend in greater access as they play for more hours. Similar trends are seen for players that have spent money elsewhere in steam, with a positive correlation between hours played and comm access rate across the board for every graph. Account security features such as 2FA and security level (calculated by summing up incidence of 2FA, email verified, phone verified) have a positive correlation with higher security → higher rate of chat access.
 
-It should be noted that there is a noticeable drop in comm access for the expert group of respondees. This can possibly be attributed to the small sample size (110) and people who answered inaccurately on the survey.
+It should be noted that there is a noticeable drop in comm access for the expert group of respondees. This can possibly be attributed to the small sample size (110) and misidentification from the respondees.
 
 ### Key Findings
 - Most players surveyed have some form of communication access
