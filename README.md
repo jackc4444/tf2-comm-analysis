@@ -8,8 +8,7 @@ decade. Some years ago, Valve disabled all chat communication for Free-To-Play (
 This is a controversial feature that does clamp down on the chat abuse somewhat, but limits the game significantly for f2p players, like preventing
 them from calling for `MEDIC!` when they are low on health. In a recent update, Valve began granting chat permissions to *some* f2p players, but
 did not disclose the requirements, probably for good reason to discourage botters from finding a loophole. The youtuber Shounic put out a survey
-to collect data
-on communications access and see if there were any factors that may point towards chat privileges. He
+to collect data on communications access and see if there were any factors that may point towards chat privileges. The [dataset](https://www.youtube.com/watch?v=ATzcWmuPfsA&t=1s) used in this project is the survey results published by Shounic.
 
 hello
 
