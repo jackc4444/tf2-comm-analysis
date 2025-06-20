@@ -153,6 +153,7 @@ The goal is to predict communication restrictions for new players based on accou
 - **Accuracy**: 0.784
 
 Confusion Matrix:
+
                     Prediction
 |Actual     | no_access | some_access|
 |-----------|-----------|------------|
