@@ -43,7 +43,7 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 `do you have a verified email on the account?`
 - String that is "Yes" or "No" corresponding to respondee's verified email status
 
-## Data Cleaning and Explroatory Data Analysis
+## Data Cleaning and Exploratory Data Analysis
 
 ### Cleaning Steps
 1. **Hours played**: Removed extreme outliers (>20,000 hours) and the entire row for those entries (since those are just people messing with the survey)
