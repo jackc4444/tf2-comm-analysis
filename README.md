@@ -68,7 +68,6 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
     height="600"
     frameborder="0">
 </iframe>
-
 A majority of the people who took this survey have some communication access. This doesn't necessarily mean that a majority of TF2 players overall have comm access however. This bias will need to be taken into account when doing the model evaluation later since it isn't close to a 50-50 split.
 
 ### Bivariate Analysis
