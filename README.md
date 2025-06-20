@@ -54,3 +54,10 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 - Most players surveyed have some form of communication access
 - Free-to-play status appears is strongly correlated to communication restrictions
 - Players with communication restrictions tend to have fewer hours played
+
+<iframe
+    src="assets/univariate.html"
+    width="800"
+    height="600"
+    frameborder="0">
+</iframe>
