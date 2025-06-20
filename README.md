@@ -98,6 +98,8 @@ This table groups by `are you free to play?` and `have you spent money on this s
 - the mean of `security_score` (calculated from summed incidence of 2FA, email verified, phone verified)
 - the count of the columns in each group for a sample size metric
 
+Some takeaways are that the majority of respondees are not F2P and have spent money elsewhere on steam. This corresponds to an almost 100% rate of comm access. The second highest comm access rate is found with players that haven't spent any money on TF2 in particular, but have elsewhere on steam, with 78% comm access rate. Complete freebies (F2P on TF2, and no money spent elsewhere), have the lowest rate of access at 0.453, but this is still pretty high and means that after the update, almost half of complete freebies now have some amount of comm access.
+
 ### Key Findings
 - Most players surveyed have some form of communication access
 - Free-to-play status appears is strongly correlated to communication restrictions
