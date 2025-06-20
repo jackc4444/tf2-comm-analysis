@@ -153,6 +153,7 @@ The goal is to predict communication restrictions for new players based on accou
 - **Accuracy**: 0.784
 
 Confusion Matrix: Prediction
+
 |Actual      | no_access | some_access|
 |-----------:|----------:|-----------:|
 |no_access   |   61      |         75 |
@@ -246,5 +247,3 @@ KNN (k=1) makes predictions based on the single most similar player in the train
 
 ### Model Assessment
 The final model achieves meaningful improvement over the baseline, with better balanced performance across both classes. The confusion matrix shows improved precision for the `no_access` class (from 44% to 51%) while maintaining strong performance on the majority class. The feature engineering successfully captured additional signal in the data, and the Random Forest algorithm proved more effective than KNN for this classification task.
-
-The pipeline implementation ensures that all feature engineering will be automatically applied to new data, making the model production-ready.
