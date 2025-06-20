@@ -191,5 +191,6 @@ KNN (k=1) makes predictions based on the single most similar player in the train
   8. account_age_years
 
 **Engineered Features**
-  9. Polynomial features
-  10. t
+1. hi
+2. h
+3. g
