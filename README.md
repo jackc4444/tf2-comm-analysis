@@ -43,6 +43,13 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 `do you have a verified email on the account?`
 - String that is "Yes" or "No" corresponding to respondee's verified email status
 
+<iframe
+    src="assets/preview.html"
+    width="800"
+    height="600"
+    frameborder="0">
+</iframe>
+
 ## Data Cleaning and Exploratory Data Analysis
 
 ### Cleaning Steps
@@ -54,13 +61,7 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 - Most players surveyed have some form of communication access
 - Free-to-play status appears is strongly correlated to communication restrictions
 - Players with communication restrictions tend to have fewer hours played
-- 
-<iframe
-    src="assets/preview.html"
-    width="800"
-    height="600"
-    frameborder="0">
-</iframe>
+
 
 <iframe
     src="assets/univariate.html"
