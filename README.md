@@ -10,12 +10,14 @@ them from calling for `MEDIC!` when they are low on health. In a recent update, 
 did not disclose the requirements, probably for good reason to discourage botters from finding a loophole. The youtuber Shounic put out a survey
 to collect data on communications access and see if there were any factors that may point towards chat privileges. The [dataset](https://www.youtube.com/watch?v=ATzcWmuPfsA&t=1s) used in this project is the survey results published by Shounic.
 
-hello
-
-
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
     <iframe src="https://www.youtube.com/embed/hYZHd7h1cLI" 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
             frameborder="0" allowfullscreen>
     </iframe>
 </div>
+
+The dataset has **12** columns and **3587** rows, corresponding to 3587 survey responses. Some promising features are:
+`how many hours do you have in tf2`
+- hi
+    - hi
