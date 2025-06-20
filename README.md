@@ -17,8 +17,11 @@ to collect data on communications access and see if there were any factors that 
     </iframe>
 </div>
 
-The dataset has **12** columns and **3587** rows, corresponding to 3587 survey responses. Some promising features are:
 
-`how many hours do you have in tf2`
-- hi
-    - hi
+#### The dataset has **12** columns and **3587** rows, corresponding to 3587 survey responses. Some important columns are:
+
+`what do you have permission to do after the update?`
+- Contains 4 unique strings, corresponding to levels of chat permissions, *text chat, no voice commands*, *no text chat, voice commands*, *text chat, voice commands*, *no text chat, no voice commands*
+- This column will be the dependent variable that I will attempt to predict in this project
+
+`how old is your steam account?`
