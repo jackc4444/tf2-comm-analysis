@@ -51,7 +51,6 @@ Instead of using a CAPTCHA or any singular metric, modern tools will have to loo
 3. **Target variable**: Created binary classification
 
 ### Key Findings
-- Most players have some form of communication access
-- Free-to-play status appears related to communication restrictions
+- Most players surveyed have some form of communication access
+- Free-to-play status appears is strongly correlated to communication restrictions
 - Players with communication restrictions tend to have fewer hours played
-- The aggregate table shows clear patterns between account characteristics and access rates
