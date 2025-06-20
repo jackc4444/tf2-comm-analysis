@@ -124,3 +124,49 @@ Classes are imbalanced, precision and recall need to be evaluated and not just a
 
 ### Predictive Model:
 The goal is to predict communication restrictions for new players based on account characteristics (account age, security features, spending history). These features would be available at prediction time since those are the factors that are taken into account when the game servers decide whether or not a player has chat access.
+
+
+## Baseline Model
+
+### **Dependent Variable**: Communication access permissions after TF2 updates
+- `no_access`: Players with no communication abilities
+- `some_access`: Players with any form of communication (text, voice, or both)
+
+### Three independent variables:
+- Free to play status
+- If money has been spent elsewhere in steam account
+- Hours played in TF2
+
+### Model Description
+**Algorithm**: K-Nearest Neighbors (k=1)  
+**Features**: 3 total features
+- **Categorical (2)**: Free-to-play status, Money spent on account
+- **Quantitative (1)**: Hours played in TF2
+
+### Features
+- **Categorical encoding**: OneHotEncoder with `drop='first'` to avoid multicollinearity
+- **Numerical scaling**: StandardScaler for hours played (important for KNN distance calculations)
+- **Pipeline**: All preprocessing steps implemented in a single sklearn Pipeline
+
+### Performance
+- **F1-Score**: 0.866
+- **Accuracy**: 0.784
+
+Confusion Matrix:
+|---|                Predicted|
+|Actual   | no_access | some_access|
+|---|---|---|
+no_access      61         75
+some_access    78        495
+
+### Model Assessment
+The baseline model achieves an F1-score of 0.866, which is **decent but has room for improvement**. The model shows alright performance with some challenges in correctly identifying comm restricted players (44% precision for no_access class).
+
+It can generalize unseen data only to the extent to which it resembles the existing data frome existing survey responses (aka not very well).
+I wouldn't consider it to be too reliable, considering only about 3k responses out of millions of tf2 players. There's probably also additional biases in that everyone who responded to this survey also was a watcher of this particular youtuber, and unseen data (as in random tf2 player) would not have this trait (and related tendencies such as english speaker, etc).
+
+A numerical based model would probably extrapolate better as it would factor in numerical trends, and not just a datapoint's relation to the training set. But for this to work, I would need a lot of quantitative features, when there really only is two.
+A lot of the data is boolean, so some sort of decision tree would probably be more effective.
+
+### Model Characteristics
+KNN (k=1) makes predictions based on the single most similar player in the training data. While this can capture complex patterns, it may be overly sensitive to individual data points. The confusion matrix shows the model has difficulty distinguishing between the classes, with 75 false positives and 78 false negatives, indicating there's significant room for improvement in the final model.
