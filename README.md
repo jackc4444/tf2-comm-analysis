@@ -191,6 +191,60 @@ KNN (k=1) makes predictions based on the single most similar player in the train
   8. account_age_years
 
 **Engineered Features**
-1. hi
-2. h
-3. g
+1. Polynomial features on account age
+2. Security Score
+3. Account Trust Score
+
+**Total number of features**: 11
+
+### Model Description
+**Algorithm**: Random Forest Classifier  
+**Features**: 8 base features + 3 engineered features
+
+### Feature Engineering
+**Engineered Features Added**:
+1. **Polynomial Features on Account Age**: Used `PolynomialFeatures(degree=2)` to create age and age² features, capturing non-linear relationships where very old accounts might have different trust patterns
+2. **Security Score**: Custom `FunctionTransformer` that combines Steam Guard/2FA, phone number, and verified email into a single security metric (0-3 scale), then standardized
+3. **Account Trust Score**: Custom `FunctionTransformer` combining spending history, VPN usage, and account age into a trust metric, then standardized
+
+**Engineered feature description**:
+- **Polynomial age features**: Captures diminishing returns of account age - the difference between 1 and 5 years matters more than 10 vs 14 years
+- **Security score**: Aggregates multiple security indicators that likely correlate with account trustworthiness
+- **Trust score**: Combines behavioral indicators (spending, VPN usage) with account maturity
+
+### Algorithm Selection
+**Random Forest Classifier** was chosen over the baseline KNN because:
+- Better handles mixed data types (categorical + numerical)
+- More robust to outliers than KNN
+- Better performance on tabular data
+
+### Hyperparameter Tuning
+**Method**: GridSearchCV with 3-fold cross-validation  
+**Parameters Tuned**:
+- `n_estimators`: [100, 200] - Number of trees in the forest
+- `max_depth`: [10, 15, None] - Maximum depth to prevent overfitting
+- `min_samples_split`: [2, 5] - Minimum samples required to split a node
+
+**Best Parameters Found**:
+- `n_estimators`: 100
+- `max_depth`: 10  
+- `min_samples_split`: 2
+
+### Performance
+- **F1-Score**: 0.885
+- **Accuracy**: 0.814
+
+### Improvement Over Baseline
+**Baseline (KNN k=1)**:
+- F1-Score: 0.866
+- Accuracy: 0.784
+
+**Final Model (Tuned Random Forest)**:
+- F1-Score: 0.885 (+0.019 improvement)
+- Accuracy: 0.814 (+0.030 improvement)
+- **Relative improvement**: 2.2% increase in F1-score
+
+### Model Assessment
+The final model achieves meaningful improvement over the baseline, with better balanced performance across both classes. The confusion matrix shows improved precision for the `no_access` class (from 44% to 51%) while maintaining strong performance on the majority class. The feature engineering successfully captured additional signal in the data, and the Random Forest algorithm proved more effective than KNN for this classification task.
+
+The pipeline implementation ensures that all feature engineering will be automatically applied to new data, making the model production-ready.
