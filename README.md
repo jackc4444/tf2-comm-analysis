@@ -152,9 +152,7 @@ The goal is to predict communication restrictions for new players based on accou
 - **F1-Score**: 0.866
 - **Accuracy**: 0.784
 
-Confusion Matrix:
-
-                    Prediction
+Confusion Matrix: Prediction
 |Actual     | no_access | some_access|
 |-----------|-----------|------------|
 no_access   |   61      |         75
