@@ -83,12 +83,12 @@ The responses were separated into different buckets from their experience level,
 It should be noted that there is a noticeable drop in comm access for the expert group of respondees. This can possibly be attributed to the small sample size (110) and misidentification from the respondees.
 
 
-|                |   Access_Rate |   Avg_Hours |   Avg_Security_Score |   Sample_Size |
-|:---------------|--------------:|------------:|---------------------:|--------------:|
-| ('No', 'No')   |         0.658 |    1729.37  |                1.711 |            38 |
-| ('No', 'Yes')  |         0.99  |    1581.73  |                2.812 |          1939 |
-| ('Yes', 'No')  |         0.453 |     537.589 |                1.844 |           919 |
-| ('Yes', 'Yes') |         0.777 |     514.349 |                2.289 |           646 |
+| F2P?, Free Steam Acc? |   Access_Rate |   Avg_Hours |   Avg_Security_Score |   Sample_Size |
+|:----------------------|--------------:|------------:|---------------------:|--------------:|
+| ('No', 'No')          |         0.658 |    1729.37  |                1.711 |            38 |
+| ('No', 'Yes')         |         0.99  |    1581.73  |                2.812 |          1939 |
+| ('Yes', 'No')         |         0.453 |     537.589 |                1.844 |           919 |
+| ('Yes', 'Yes')        |         0.777 |     514.349 |                2.289 |           646 |
 
 
 ### Key Findings
